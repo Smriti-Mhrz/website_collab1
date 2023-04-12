@@ -4,6 +4,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import logo from "../assets/images/logo.webp"
 import {FaBars, FaTimes} from 'react-icons/fa'
 
+const navList= ['Home', 'Products', 'Services', 'Portfolio','Team','Blog','Contact']
 export default function NavBar() {
   const navList=['Home', 'Products', 'Services', 'Portfolio', 'Team', 'Blog', 'Contact'];
   const [click, setClick] = useState(false);

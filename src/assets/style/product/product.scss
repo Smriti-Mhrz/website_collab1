@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Roboto&display=swap%27");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.productpage__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5em;
+  border: 1px solid black;
+  .productpage__collection {
+    width: 25%;
+    border: 1px solid gainsboro;
+    margin-right: 1em;
+    h4 {
+      background-color: #e5e5e5;
+      padding: 1em;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .productpage__collectionlist {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      a {
+        text-decoration: none;
+        border: 1px solid gainsboro;
+        list-style: none;
+        font-size: 1.2rem;
+        padding: 0.5em 1em 0.5em 1em;
+        font-weight: bolder;
+        color: #777777;
+        width: 100%;
+        &:hover {
+          color: white;
+          background-color: #fe7865;
+          border-color: #fe7865;
+        }
+      }
+    }
+  }
+  .productpage__images {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0.8em;
+    .productpage__singleImage {
+      width: 30%;
+      line-height: 1.4em;
+      .product__image {
+        width: 100%;
+        height: 17em;
+        overflow: hidden;
+        margin-bottom: 0.2em;
+        img {
+          width: 100%;
+          height: 100%;
+          transition: transform 0.5s ease;
+          &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+          }
+        }
+        .discount__badge {
+          position: relative;
+          background-color: #fe7865;
+          border-radius: 50%;
+          top: -17em;
+          left: 2em;
+          margin-left: 9em;
+          width: 25%;
+          padding: 1em;
+          span {
+            color: white;
+            margin-left: -0.5em;
+          }
+        }
+      }
+
+      h5 {
+        font-size: 1.1rem;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fc924b;
+      }
+      span {
+        color: #fe7865;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .productpage__wrapper {
+    display: block;
+    .productpage__collection {
+      width: 100%;
+    }
+    .productpage__images {
+      width: 100%;
+      .productpage__singleImage {
+        width: 100%;
+      }
+    }
+  }
+}
