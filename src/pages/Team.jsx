@@ -6,10 +6,10 @@ import { FiTwitter } from "react-icons/fi";
 import { BsFillPlayFill } from "react-icons/bs";
 const teamMembers = [
   {
-    name: "Suraj Pulami Magar",
-    title: "FrontEnd",
+    name: "Yamima Moktan",
+    title: "QA Engineer",
     image:
-      "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     socialMedia: {
       facebook: <FaFacebookF />,
       instagram: <GrInstagram />,
@@ -28,10 +28,10 @@ const teamMembers = [
     },
   },
   {
-    name: "Kapil Chhatkuli",
-    title: "BackEnd",
+    name: "Anu Shrestha",
+    title: "Android Developer",
     image:
-      "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     socialMedia: {
       facebook: <FaFacebookF />,
       instagram: <GrInstagram />,
@@ -39,10 +39,10 @@ const teamMembers = [
     },
   },
   {
-    name: "Ankit Maharjan",
-    title: "BackEnd",
+    name: "Kajal Acharya",
+    title: "IOS Developer",
     image:
-      "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "https://media.licdn.com/dms/image/D5603AQE3R_0Iz0CKOQ/profile-displayphoto-shrink_800_800/0/1676811152407?e=2147483647&v=beta&t=KQvHPvivpTlG80iq-2pvGV8Dlx2IKoL1yQe78Y32dUg",
     socialMedia: {
       facebook: <FaFacebookF />,
       instagram: <GrInstagram />,
