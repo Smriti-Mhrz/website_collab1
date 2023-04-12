@@ -2,7 +2,8 @@
     display: grid;
     z-index: -1;
     position: relative;
-    margin: 1rem;
+    margin: 3rem;
+    overflow: hidden;
     grid-template-columns: 45% 55%;
     grid-template-areas: "banner description" ;
     grid-gap: 3.5rem ;
@@ -18,7 +19,7 @@
         }
     }
     .banner__desc{
-        border: 1px solid black;
+        // border: 1px solid black;
         position: relative;
         top: -10%;
         width: 80%;
@@ -57,8 +58,8 @@
             background-color: #fff;
         }
     }
-    .social-media{        
-        position: relative;
+    .social-media{  
+        display: flex;      
         left: 60%;        
        ul{
         display: flex;
@@ -72,6 +73,6 @@
     }
 }     
 }
-@media screen and (max-width:991px)and (min-width:481px){
+@media screen and (max-width:991px) and (min-width:481px){
 }
 

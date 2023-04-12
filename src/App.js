@@ -1,17 +1,20 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.scss';
-import HomePage from './layouts/HomePage';
-// import { NavBar} from './components';
-// import Home from './pages/Home';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.scss";
+import { Product } from "./pages";
+import Home from "./pages/Home";
+import { Footer, NavBar } from "./components";
 function App() {
   return (
-   <>
-   <BrowserRouter>
-      <Routes>
-        <Route exact path='/' element={<HomePage/>}/>
-      </Routes>
-   </BrowserRouter>
-   </>
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route exact path="/Products" element={<Product />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
