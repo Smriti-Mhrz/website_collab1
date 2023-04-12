@@ -12,7 +12,6 @@ function App() {
           <Route index element={<Home />} />
           <Route exact path="/Products" element={<Product />} />
           <Route exact path="/Service" element={<Service />} />
-          <Route exact path="/Team" element={<Team />} />
         </Routes>
         <Footer />
       </BrowserRouter>

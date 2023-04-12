@@ -86,7 +86,7 @@ export const Team = () => {
             asperiores magnam."
           </p>
           <h4>Smriti Maharjan</h4>
-          <span>Founder,CEO</span>
+          <span>Founder,Leader</span>
         </div>
         <div className="video">
           <BsFillPlayFill />
