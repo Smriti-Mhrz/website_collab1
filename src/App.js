@@ -1,14 +1,8 @@
 import "./App.css";
 import { NavBar, Footer } from "./components";
-import { Product } from "./pages";
+import { Product, Service } from "./pages";
 function App() {
-  return (
-    <div className="App">
-      <NavBar />
-      <Product />
-      <Footer />
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;

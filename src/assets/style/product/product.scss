@@ -11,7 +11,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 5em;
-  border: 1px solid black;
+  margin: 3em;
   .productpage__collection {
     width: 25%;
     border: 1px solid gainsboro;
@@ -38,7 +38,7 @@
         font-weight: bolder;
         color: #777777;
         width: 100%;
-        &:hover {
+        &:focus {
           color: white;
           background-color: #fe7865;
           border-color: #fe7865;
@@ -46,6 +46,7 @@
       }
     }
   }
+
   .productpage__images {
     width: 70%;
     display: flex;
