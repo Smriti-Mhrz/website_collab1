@@ -14,9 +14,22 @@
         grid-area: banner;
         // padding: 1rem ;
         img{
-            width: 90%;
+            width: 550px;            
             height: 450px;
         }
+    }
+    .banner__circle{
+        position: absolute;
+        background-color: #fe7865;
+        border-radius: 20rem;
+        top: 5em;
+        left: 22em;
+        margin-left: 9em;
+        padding: 2rem;
+          p {
+            color: white;
+            margin-left: -0.5em;
+          }
     }
     .banner__desc{
         // border: 1px solid black;
@@ -58,13 +71,12 @@
             background-color: #fff;
         }
     }
-    .social-media{  
-        display: flex;      
+    .social-media{ 
+        width: 120px; 
         left: 60%;        
        ul{
         display: flex;
         position: absolute;
-        justify-content: space-between;
         border: 1px solid black;
        }
         li{
@@ -74,5 +86,6 @@
 }     
 }
 @media screen and (max-width:991px) and (min-width:481px){
+
 }
 

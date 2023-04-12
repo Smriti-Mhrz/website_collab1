@@ -8,9 +8,9 @@ export default function Home() {
     <div className='container__home'>
         <div className='image'>
           <img src={banner} alt="main_banner" />    
-          {/* <div className="banner__circle">
-            <p>-50% Off</p>
-          </div>             */}
+          <div className="banner__circle">
+            <p>-50%<br/> Off</p>
+          </div>            
         </div>
         <div className='banner__desc'>
           <h1><span>Sofa</span> and <span>Armchairs</span></h1>
