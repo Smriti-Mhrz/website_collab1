@@ -12,5 +12,10 @@ html{
 }
 body{
     background: #fff;
-    overflow: hidden;
+    // overflow: hidden;
+    height: auto;
+}
+li, a{
+    text-decoration: none;
+    list-style-type: none;
 }
