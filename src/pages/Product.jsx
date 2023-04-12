@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { AiOutlineStar, AiFillStar } from "react-icons/ai";
-import furniture from "../assets/images/products/furniture1.jpg";
+import { AiFillStar } from "react-icons/ai";
 import "../assets/style/product/product.scss";
 const productList = [
   {
@@ -117,7 +116,11 @@ export const Product = () => {
         <div className="productpage__collectionlist">
           {collectionList.map((item, index) => {
             return (
-              <NavLink key={index} onClick={(e) => getProductId(e, item)}>
+              <NavLink
+                className="active"
+                key={index}
+                onClick={(e) => getProductId(e, item)}
+              >
                 {item}
               </NavLink>
             );

@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
 import { Product } from "./pages";
@@ -16,6 +17,7 @@ function App() {
       </BrowserRouter>
     </>
   );
+
 }
 
 export default App;

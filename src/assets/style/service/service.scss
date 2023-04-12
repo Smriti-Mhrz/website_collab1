@@ -1,0 +1,119 @@
+$primary-color: #fe7865;
+.servicespage__wrapper {
+  background-color: #fffaf6;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 3em;
+}
+.servicepage__ourstory {
+  grid-column: 2 span;
+  margin-bottom: 4em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  h5 {
+    grid-column: 2 span;
+    color: $primary-color;
+    margin-left: 8em;
+    font-size: 1rem;
+    font-weight: bold;
+    &::before {
+      content: " ";
+      display: block;
+      height: 0.1em;
+      width: 8em;
+      position: relative;
+      top: 0.9em;
+      left: -8em;
+      background: $primary-color;
+      border-radius: 0.8em;
+      opacity: 0.5;
+    }
+  }
+  h3 {
+    grid-column: 2 span;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  p {
+    grid-column: 2 span;
+    color: #777777;
+  }
+}
+.servicepage__servicesdisplay {
+  grid-column: 2 span;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  .servicesdisplay__image {
+    display: block;
+    img {
+      height: auto;
+      width: 100%;
+      margin-bottom: 2em;
+    }
+    button {
+      background-color: $primary-color;
+      outline: none;
+      border-color: $primary-color;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.8em 2em 0.8em 2em;
+      border: 1px solid $primary-color;
+      margin-bottom: 25px;
+      &:hover {
+        border: 1px solid;
+        border-color: #fe7865;
+        color: $primary-color;
+        background-color: white;
+        transition: 0.3s ease-in;
+      }
+    }
+  }
+  .servicesdisplay__servicelist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-left: 1em;
+    flex-wrap: wrap;
+    gap: 25px;
+    .servicesdescription {
+      width: 250px;
+      height: 250px;
+      text-align: center;
+      border: 1px solid gainsboro;
+      background-color: white;
+      color: #777777;
+      padding: 1em;
+      i {
+        color: $primary-color;
+        font-size: 3.5rem;
+      }
+      h5 {
+        font-size: 1.2rem;
+        color: $primary-color;
+      }
+      &:nth-child(2) {
+        transform: translateY(10%);
+      }
+      &:nth-child(4) {
+        transform: translateY(10%);
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .servicespage__wrapper {
+        margin: 0;
+      }
+      .servicesdisplay__servicelist {
+        gap: 25px;
+      }
+      .servicesdescription {
+        &:nth-child(2) {
+          transform: translateY(0%);
+        }
+        &:nth-child(4) {
+          transform: translateY(0%);
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import '../assets/style/NavBar.scss'
 import { NavLink, Outlet } from 'react-router-dom';
@@ -43,4 +44,5 @@ export default function NavBar() {
 
     
   )
+
 }
