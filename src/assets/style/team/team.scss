@@ -1,6 +1,9 @@
 .team__wrapper {
-  margin: 48px;
   background-color: #fffaf6;
+  margin: auto;
+  padding: 20px;
+  width: fit-content;
+  height: max-content;
   .team__info {
     text-align: center;
     h3 {
@@ -16,6 +19,7 @@
       text-justify: distribute;
     }
   }
+
   .team__photos {
     display: flex;
     align-items: flex-start;
@@ -69,6 +73,21 @@
     background-size: cover;
     height: 450px;
     margin-bottom: 150px;
+    .msg__carousel {
+      list-style: none;
+      display: flex;
+      scroll-behavior: smooth;
+      position: relative;
+      counter-reset: item;
+      top: 150px;
+      left: 40px;
+      li {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        counter-increment: item;
+      }
+    }
     .message {
       border: 1px solid #fe7865;
       background-color: #fe7865;
@@ -86,6 +105,20 @@
       }
       span {
         font-size: 20px;
+      }
+    }
+    @media screen and (max-width: 625px) {
+      .tb__message {
+        left: 20px;
+        font-size: 30px;
+        width: 300px;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      .mb__message {
+        left: 20px;
+        font-size: 20px;
+        width: 200px;
       }
     }
     .video {
@@ -106,12 +139,5 @@
         background-color: #fe7865;
       }
     }
-  }
-}
-@media screen and (max-width: 450px) {
-  .message {
-    width: fit-content;
-    font-size: 10px;
-    background-color: blue;
   }
 }
