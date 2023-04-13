@@ -1,6 +1,6 @@
 .navbar__main {
   height: 80%;
-  width: 100%;
+  width: 48px;
   margin: auto;
   display: grid;
   z-index: auto;
@@ -51,7 +51,7 @@
     // margin: -1rem auto;
     .logo__img {
       position: absolute;
-      left: 15%;
+      left: 3%;
     }
     .nav__menubar {
       position: absolute;
@@ -84,7 +84,7 @@
   }
   .hamburger {
     position: absolute;
-    right: 15%;
+    right: 6%;
     top: 4%;
     display: flex;
     justify-content: flex-end;
@@ -109,7 +109,8 @@
       }
     }
     .logo__img {
-      width: 100%;
+      width: 500px;
+      margin-left: -1rem;
       .img {
       }
     }

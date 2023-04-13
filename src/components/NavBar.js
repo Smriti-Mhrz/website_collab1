@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "../assets/style/NavBar.scss";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import logo from "../assets/images/logo.webp";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Home from "../pages/Home";
 
 export default function NavBar() {
   const navList = [
