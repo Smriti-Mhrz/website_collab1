@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
 import "../assets/style/product/product.scss";
