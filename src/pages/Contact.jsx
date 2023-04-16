@@ -75,7 +75,7 @@ export const Contact = () => {
               <textarea
                 name="message"
                 cols="30"
-                rows="10"
+                rows="5"
                 placeholder="Enter Your Message"
               ></textarea>
             </div>

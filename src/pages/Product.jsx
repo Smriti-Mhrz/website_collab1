@@ -128,7 +128,6 @@ export const Product = () => {
         </div>
       </div>
       <div className="productpage__images">
-        {/* {productDisplay.map((item) => { */}
         {productList
           .filter((item) => {
             return item.id === productId;
@@ -139,7 +138,7 @@ export const Product = () => {
                 <div className="product__image">
                   <img src={item.image_url} alt="furniture" />
                   <div className="discount__badge">
-                    <span>{item.discount}</span>
+                    <p>{item.discount}</p>
                   </div>
                 </div>
                 <h5>{item.productName}</h5>
