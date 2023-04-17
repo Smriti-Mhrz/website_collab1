@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiFillStar } from "react-icons/ai";
-import "../assets/style/product/product.scss";
+// import "../assets/style/product/product.scss";
 const productList = [
   {
     id: "Furniture",

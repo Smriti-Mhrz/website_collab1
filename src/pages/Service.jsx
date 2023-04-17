@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/style/service/service.scss";
+// import "../assets/style/service/service.scss";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { BsGrid } from "react-icons/bs";
 import { TfiRulerPencil } from "react-icons/tfi";

@@ -71,10 +71,10 @@
 //             background-color: #fe7865;
 //             text-align: center;
 //             transition: all .4s ease-out 0s;
-//             color: #fff;
+//             color: $font_color3;
 //             font-weight: 500;
 //             &:hover{
-//                 background-color: #fff;
+//                 background-color: $font_color3;
 //                 transition: 0.3s ease-in;
 //                 color:#fe7865; ;
 //             }
@@ -86,10 +86,11 @@
 //         left: 18em;
 //     }
 // }
-$primary_color:#fe7865;
+@import "../abstracts/variables";
+
 
 .hero_section {
-  max-width: 1170px;
+  max-width: $container_width;
   display: flex;
   gap: 15%;
 
@@ -117,7 +118,7 @@ $primary_color:#fe7865;
 
       p {
         display: block;
-        color: #fff;
+        color: $font_color3;
         font-weight: 600;
         font-size: 16px;
         text-transform: uppercase;
@@ -128,12 +129,12 @@ $primary_color:#fe7865;
     h1 {
       font-size: 92px;
       font-weight: 600;
-      color: #333333;      
+      color: $font_color2;      
     }
     p {
       font-size: 16px;
       margin: 0 0 25px;
-      color: #777777;
+      color: $font_color1;
       line-height: 24px;
     }
     .social_media{

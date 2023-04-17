@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/style/team/team.scss";
+// import "../assets/style/team/team.scss";
 import { FaFacebookF } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { FiTwitter } from "react-icons/fi";
@@ -49,6 +49,28 @@ const teamMembers = [
       twitter: <FiTwitter />,
     },
   },
+  {
+    name: "Anisha Manandhar",
+    title: "Designer",
+    image:
+      "https://media.licdn.com/dms/image/D5603AQE3R_0Iz0CKOQ/profile-displayphoto-shrink_800_800/0/1676811152407?e=2147483647&v=beta&t=KQvHPvivpTlG80iq-2pvGV8Dlx2IKoL1yQe78Y32dUg",
+    socialMedia: {
+      facebook: <FaFacebookF />,
+      instagram: <GrInstagram />,
+      twitter: <FiTwitter />,
+    },
+  },
+  {
+    name: "Himanshu Sharma",
+    title: "Dot Net Developer",
+    image:
+      "https://media.licdn.com/dms/image/D5603AQE3R_0Iz0CKOQ/profile-displayphoto-shrink_800_800/0/1676811152407?e=2147483647&v=beta&t=KQvHPvivpTlG80iq-2pvGV8Dlx2IKoL1yQe78Y32dUg",
+    socialMedia: {
+      facebook: <FaFacebookF />,
+      instagram: <GrInstagram />,
+      twitter: <FiTwitter />,
+    },
+  },
 ];
 export const Team = () => {
   return (
@@ -56,10 +78,8 @@ export const Team = () => {
       <div className="team__info">
         <h3>Our Expert Team</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ad unde
-          praesentium architecto, provident quasi consequuntur quaerat incidunt
-          aspernatur placeat? Culpa, consequuntur recusandae voluptate adipisci
-          quia cumque perferendis nihil hic.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm
+          od tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
       <div className="team__photos">

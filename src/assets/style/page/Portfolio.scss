@@ -1,5 +1,7 @@
+@import "../abstracts/variables";
+
 .portfolio__wrapper {
-  max-width: 1170px;
+  max-width: $container_width;
   margin: 0 auto;
   padding: 0 15px;
 
@@ -9,42 +11,36 @@
     gap: 15%;
     margin: 0 15px;
     padding: 25px 0 0;
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-template-areas: "header paragraph";
-    // grid-gap:10px;
-
-    h2 {
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      font-size: 35px;
-      color: #333333;
-      // grid-area: header;
-      // border: 1px solid black;
+     h2 {      
+      font-size: 35px;     
     }
-    p {
-      // grid-area: paragraph;
-      // display: flex;
-      // justify-content: center;
+    p {      
       font-size: 16px;
       line-height: 24px;
-      color: #777;
+      color: $font_color1;
       font-weight: 400;
       margin: 0;
-      // border: 1px solid black;
     }
+  }
     .portfolio__image {
       object-fit: contain;
       width: 100%;
       height: 745px;
       padding: 0 15px;
       position: relative;
+      margin-top: 65px;
       .portfolio__arrow {
         position: absolute;
         width: 70px;
         display: flex;
         justify-content: space-between;
       }
+      .portfolio_banner{        
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
     }
-  }
 }
+

@@ -1,5 +1,5 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+@import "./assets/style/index.scss";
 
 * {
   margin: 0;
@@ -8,15 +8,18 @@
   font-family: "Poppins", sans-serif;
 }
 html {
-  display: block;
   line-height: 1.15;
+  display: block;
+}
+body {
   margin: auto;
   height: max-content;
   width: fit-content;
-}
-body {
-  background: #fff;
+  background: $font_color3;
   height: auto;
+  // background-image: url(https://picsum.photos/1280/720);
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
 li,
 a {
@@ -34,7 +37,7 @@ button {
   margin: 1.5rem auto;
   padding: 1rem;
   border: 1px solid #fe7865;
-  background-color: #fe7865;
+  background-color: $primary_color;
   text-align: center;
   transition: all 0.4s ease-out 0s;
   color: #fff;
@@ -44,5 +47,3 @@ button {
     color: #fe7865;
   }
 }
-
-

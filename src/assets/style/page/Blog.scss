@@ -1,75 +1,76 @@
-.blog__container {
-  max-width: 1170px;
-  margin: 0 auto;
-  background-color:whitesmoke; 
+@import "../abstracts/variables";
 
-  .blog__head {  
+.blog__container {
+  max-width: $container_width;
+  margin: 0 auto;
+  background-color: $background-color;
+
+  .blog__head {
     text-align: center;
-    h3{
-        font-size:32px;  
-        margin-bottom: 15px;  
-        color: #333333;  
+    h3 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: $font_color2;
     }
-    p{
-      color: #777;
+    p {
+      color: $font_color1;
       font-size: 16px;
       width: 576px;
       font-weight: 400;
       line-height: 24px;
-      margin-top: 15px;
-      margin-bottom: 15px;
+      margin: auto;
+      text-align: center;
+      text-justify: inter-word;
     }
   }
-  .blog__body{
+  .blog__body {
     display: flex;
     justify-content: center;
     gap: 2%;
     flex-wrap: wrap;
-    margin-bottom: 30px;
-    .body__section{
-      border: 1px solid rgb(201, 201, 201);
+    margin: 20px auto;
+    .body__section {
+      border: 1px solid $background-color;
       position: relative;
-      .blog_img{
-        
+
+      .profile_img {
+        width: 100%;
+        overflow: hidden;
         img {
           width: 100%;
-          height: 100%;
-          // transition: transform 0.5s ease;
+          transition: transform 0.5s ease;
+          cursor: pointer;
           &:hover {
             transform: scale(1.2);
-            cursor: pointer;
-            // transition: transform 0.5s ease;
+            transition: transform 0.5s ease;
           }
         }
       }
-      .content{
+      .content {
         padding: 20px 35px 25px;
         line-height: 36px;
-        h4{
-          color: #333333;
+        h4 {
+          color: $font_color2;
           font: 20px;
         }
-        span{
+        span {
           display: inline-block;
-          color: #777777;
+          color: $font_color1;
           font-size: 16px;
         }
-        .profile_desc{
-          border-top: 1px solid rgb(201, 201, 201);
+        .profile_desc {
+          border-top: 1px solid $background-color;
           margin-top: 20px;
-          display: flex;  
+          display: flex;
           justify-content: center;
           align-items: center;
-          gap: 10%;      
+          gap: 10%;
           font-size: 16px;
-          .profile_img{
+          img {
             border-radius: 50%;
-            
           }
         }
       }
-
     }
   }
-  
 }

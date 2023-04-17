@@ -1,10 +1,9 @@
 import React from "react";
-import "../assets/style/page/Home.scss";
 import banner from "../assets/images/main_banner.webp";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { RiArrowRightSLine } from "react-icons/ri";
 
-export default function Home() {
+export function Home() {
   return (
     <>
       <div className="hero_section">
