@@ -7,7 +7,6 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 export default function Footer() {
   return (
     <>
-      <div className='container__footer'>
         <div className='footer__section'>
           <div className='section__part tablet__part mb__part'>
             <ul>
@@ -15,9 +14,9 @@ export default function Footer() {
               <li>Gravida nibh vel velit auctor aliquetn</li>
               <li>quibibendum auci elit cons equat ipsutis sem nibh id elit.</li>
               <li className='icons'>
-                <FaFacebook/>
-                <FaTwitter/>
-                <FaInstagram/>
+                <i><a><FaFacebook/></a></i>
+                <i><a><FaTwitter/></a></i>
+                <i><a><FaInstagram/></a></i>
               </li>
             </ul>
           </div>
@@ -55,7 +54,6 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-      </div>
     </>
   )
 }

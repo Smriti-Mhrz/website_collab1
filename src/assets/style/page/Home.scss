@@ -86,28 +86,30 @@
 //         left: 18em;
 //     }
 // }
+$primary_color:#fe7865;
 
 .hero_section {
+  max-width: 1170px;
   display: flex;
   gap: 15%;
 
   .banner_section {
     width: 50%;
-    position: relative;
+    // position: relative;
     img {
       object-fit: contain;
       width: 100%;
       height: 100%;
     }
-
     .banner__circle {
-      position: absolute;
+      position: relative;
       height: 100px;
       width: 100px;
       border-radius: 100%;
-      background-color: #fe7865;
-      top: 50px;
-      right: -50px;
+      background-color: $primary_color;
+      top: -80%;
+      left: 90%;
+      // right: -50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -126,9 +128,7 @@
     h1 {
       font-size: 92px;
       font-weight: 600;
-      color: #333333;
-      span {
-      }
+      color: #333333;      
     }
     p {
       font-size: 16px;
@@ -136,5 +136,69 @@
       color: #777777;
       line-height: 24px;
     }
+    .social_media{
+      ul{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 50px);
+        a{
+            background-color: rgb(214, 214, 214);
+            border-radius: 40%;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+      }
+    }
   }
 }
+@media screen and (max-width:991px) {   
+  .hero_section{
+    padding: 25px;
+  
+  .banner_section{
+    img{
+      display: block;
+      max-width: 100%;
+    }
+  }
+  .banner_desc{
+    h1{
+      font-size: 75px;
+    }
+  }  
+}
+}
+@media screen and (max-width:767px) {
+  .hero_section{
+    
+    .banner_section{
+      display: none;    
+    }
+    .banner_desc{
+      justify-content: center;
+      h1{
+        font-size: 45px;
+      }
+      p{
+        font-size: 1rem;
+      }
+    }
+  }
+  }
+  @media screen and (max-width:512px) {
+    .banner_desc{
+      padding: 1rem;
+      h1{
+        font-size: 35px;
+      }
+    }
+  }
+  
+

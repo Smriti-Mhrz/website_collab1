@@ -21,10 +21,8 @@ export default function NavBar() {
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>
-
         <ul
-          className={`nav_list ${click ? "nav__menubar active" : "nav__menu"}`}
-        >
+          className={`nav_list ${click ? "nav__menubar active" : "nav__menu"}`}        >
           <li>
             <NavLink to="/">Home </NavLink>
           </li>
@@ -36,12 +34,10 @@ export default function NavBar() {
             );
           })}
         </ul>
-
         <ul
           className={`mobile_menu ${
             click ? "nav__menubar active" : "nav__menu"
-          }`}
-        >
+          }`}        >
           <li>
             <NavLink to="/">Home </NavLink>
           </li>

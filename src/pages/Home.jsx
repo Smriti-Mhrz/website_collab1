@@ -28,7 +28,7 @@ export default function Home() {
           <button>
             Learn More <RiArrowRightSLine />
           </button>
-          <div className="social-media">
+          <div className="social_media">
             <ul>
               <li>
                 <a href="">

@@ -14,7 +14,6 @@ html {
 }
 body {
   background: #fff;
-  // overflow: hidden;
   height: auto;
 }
 li,
@@ -27,3 +26,20 @@ a {
   max-width: 1300px;
   margin: 0 auto;
 }
+button {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border: 1px solid #fe7865;
+  background-color: #fe7865;
+  text-align: center;
+  transition: all 0.4s ease-out 0s;
+  color: #fff;
+  &:hover {
+    background-color: #fff;
+    transition: 0.3s ease-in;
+    color: #fe7865;
+  }
+}
+
