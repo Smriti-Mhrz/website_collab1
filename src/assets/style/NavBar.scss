@@ -1,128 +1,131 @@
+.nav_container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 .navbar__main {
-  height: 80%;
-  width: 48px;
-  margin: auto;
-  display: grid;
-  z-index: auto;
-  // grid-template-columns: 4fr 8fr;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   width: 100%;
-  padding: 1rem;
-  // top: 0;
-  // left: 0;
-  .logo__img {
-    margin-left: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
 
-    img {
-      max-width: 100%;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
-  .nav__menu {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    // margin: 0 0 0.3rem 12rem;
-    li {
-      list-style-type: none;
-      margin: 1rem;
-      font-size: 16px;
-      font-weight: 600;
-      a {
-        text-decoration: none;
-        color: black;
-        &:hover {
-          color: #fe7865;
-        }
-        &.active {
-          color: #fe7865;
-        }
-      }
-    }
-  }
-}
-.hamburger {
-  display: none;
-}
-
-@media screen and (max-width: 991px) and (min-width: 481px) {
-  .navbar__main {
-    // margin: -1rem auto;
-    .logo__img {
-      position: absolute;
-      left: 3%;
-    }
-    .nav__menubar {
-      position: absolute;
-      top: 10%;
-      background: #f8f8f8;
-      left: 13%;
-      width: 75%;
-      transition: 0.3s ease in;
-      padding: 10px;
+  .nav_list {
+    display: flex;
       li {
-        list-style-type: none;
-        padding: 1rem 0;
-        font-size: 1rem;
-        // border:1px dashed #fe7865;
         a {
-          text-decoration: none;
-          &:hover {
-            color: #fe7865;
-          }
-          &.active {
+          display: block;
+          padding: 10px 15px;
+          color: #777777;
+          font-weight: 600;
+          &:active{
             color: #fe7865;
           }
         }
+    }
+  }
+  
+  .mobile_menu {
+    display: none;
+    
+  }
+  .hamburger{
+    display: none;
+  }
+  
+  @media screen and (max-width: 991px){
+        .nav__menubar {
+        position: absolute;
+        top: 10%;
+        background: #dadada;
+        left: 13%;
+        width: 75%;
+        li {
+          font-size: 1rem;
+          a {
+            &:hover {
+              color: #fe7865;
+            }
+            
+          }
+        }
+      }
+      .nav__menu {
+        display: none;
+      }
+    
+    .hamburger {
+      display: block;
+      cursor: pointer;     
+    }
+    .nav_list{
+      flex-direction: column;
+    }
+
+  }
+  @media screen and (max-width: 512px) {
+    .navbar__main {
+      width: 75%;
+      .nav__menubar {
+        position: absolute;
+        top: 10%;
+        display: grid;
+        grid-template-rows: repeat(7, 1fr);
+        background: #f8f8f8;
+        left: 13%;
+        width: 75%;
+        transition: 0.3s ease in;
+        padding: 10px;
+        li {
+          padding: 0.3rem 0;
+        }
+      }
+      .logo__img {
+        display: block;
+        // width: 50rem;
+        margin-left: 25px;       
       }
     }
     .nav__menu {
-      //    visibility: hidden;
-      display: none;
+      visibility: hidden;
+    }
+    .hamburger {
+      display: block;      
     }
   }
-  .hamburger {
-    position: absolute;
-    right: 6%;
-    top: 4%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    cursor: pointer;
-  }
+
+  // .logo {
+  //   margin-left: 2rem;
+
+  //   img {
+  //     max-width: 100%;
+  //     &:hover {
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
+  // .nav__menu {
+  //   display: grid;
+  //   grid-template-columns: repeat(7, 1fr);
+  //   // margin: 0 0 0.3rem 12rem;
+  //   li {
+  //     margin: 1rem;
+  //     font-size: 16px;
+  //     font-weight: 600;
+  //     a {
+  //       color: black;
+  //       &:hover {
+  //         color: #fe7865;
+  //       }
+  //       &.active {
+  //         color: #fe7865;
+  //       }
+  //     }
+  //   }
+  // }
 }
-@media screen and (max-width: 480px) {
-  .navbar__main {
-    width: 75%;
-    // border: 1px solid black;
-    .nav__menubar {
-      position: absolute;
-      top: 10%;
-      background: #f8f8f8;
-      left: 13%;
-      width: 75%;
-      transition: 0.3s ease in;
-      padding: 10px;
-      li {
-        padding: 0.3rem 0;
-      }
-    }
-    .logo__img {
-      width: 500px;
-      margin-left: -1rem;
-      .img {
-      }
-    }
-  }
-  .nav__menu {
-    visibility: hidden;
-  }
-  .hamburger {
-    display: block;
-    position: absolute;
-    left: 24rem;
-    top: 2rem;
-    cursor: pointer;
-  }
-}
+
+// @media (max-width: 1199px) {
+//   for desktop and above
+// }
+

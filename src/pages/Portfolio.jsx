@@ -1,20 +1,27 @@
-import React from 'react'
-import "../assets/style/Portfolio.scss"
+import React, { useState } from 'react'
+import "../assets/style/page/Portfolio.scss"
 import image_one from "../assets/images/portfolio/image1.webp"
 import image_two from "../assets/images/portfolio/image2.webp"
-
+import {AiOutlineArrowRight,AiOutlineArrowLeft} from "react-icons/ai"
 
 export default function Portfolio() {
+
+  const[img,setImg]=useState(image_one);
+
   return (
     <>
       <div className="portfolio__wrapper">
         <div className="portfolio__desc">
-          <h1>Showcase</h1>
+          <h2>Showcase</h2>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo.</p>
         </div>
         <div className="portfolio__image">
-            <img src={image_one} alt="banner_one" />
-            <img src={image_two} alt="banner_two" />
+          <div className="portfolio__arrow">
+          <button onClick={()=>setImg(image_two)}><AiOutlineArrowLeft/></button>
+          <button onClick={()=>setImg(image_one)}><AiOutlineArrowRight/></button>
+          </div>
+            <img src={img} alt="banner_one" />
+            <button className='portfolio__prev'>Full Preview</button>
         </div>
       </div>
     </>
