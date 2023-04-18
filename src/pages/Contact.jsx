@@ -28,31 +28,31 @@ export const Contact = () => {
   return (
     <div className="contact">
       <div className="contact__slogan">
-        <h2>Get In Touch</h2>
+        <h3>Get In Touch</h3>
       </div>
       <div className="contact__box">
         <div className="contact__info">
           <h4>Contact Info</h4>
-          <h5>
+          <p>
             <span>
               <BsTelephone />
             </span>
 
             {contactInfo?.phone}
-          </h5>
-          <h5>
+          </p>
+          <p>
             <span>
               <AiOutlineMail />
             </span>
             {contactInfo?.email}
-          </h5>
-          <h5>
+          </p>
+          <p>
             <span>
               <FiHome />
             </span>
             {contactInfo?.address?.street},
             <span>{contactInfo?.address?.city}</span>
-          </h5>
+          </p>
         </div>
         <div className="contact__form">
           <form onSubmit={navigateUser}>

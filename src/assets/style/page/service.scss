@@ -1,9 +1,11 @@
+@import "../abstracts/variables";
 $primary-color: #fe7865;
 .servicespage__wrapper {
   background-color: #fffaf6;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  margin: 3em;
+  margin: 48px;
+  max-width: $container_width;
 }
 .servicepage__ourstory {
   grid-column: 2 span;
@@ -43,7 +45,7 @@ $primary-color: #fe7865;
 .servicepage__servicesdisplay {
   grid-column: 2 span;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   .servicesdisplay__image {
     display: block;
     img {
@@ -74,7 +76,6 @@ $primary-color: #fe7865;
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin-left: 1em;
     flex-wrap: wrap;
     gap: 25px;
     .servicesdescription {
@@ -87,32 +88,90 @@ $primary-color: #fe7865;
       padding: 1em;
       i {
         color: $primary-color;
-        font-size: 3.5rem;
+        font-size: 56px;
       }
       h5 {
-        font-size: 1.2rem;
+        font-size: 19px;
         color: $primary-color;
       }
       &:nth-child(2) {
-        transform: translateY(10%);
+        transform: translateY(8%);
       }
       &:nth-child(4) {
-        transform: translateY(10%);
+        transform: translateY(8%);
       }
     }
-    @media screen and (max-width: 500px) {
-      .servicespage__wrapper {
-        margin: 0;
-      }
-      .servicesdisplay__servicelist {
-        gap: 25px;
-      }
+  }
+}
+@media (min-width: 1096px) and (max-width: 1150px) {
+  .servicepage__servicesdisplay {
+    .servicesdisplay__servicelist {
       .servicesdescription {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        border: 1px solid gainsboro;
+        background-color: white;
+        color: #777777;
+        padding: 1em;
+        i {
+          color: $primary-color;
+          font-size: 56px;
+        }
+        h5 {
+          font-size: 19px;
+          color: $primary-color;
+        }
         &:nth-child(2) {
-          transform: translateY(0%);
+          transform: translateY(8%);
         }
         &:nth-child(4) {
-          transform: translateY(0%);
+          transform: translateY(8%);
+        }
+      }
+    }
+  }
+}
+@media (min-width: 767px) and (max-width: 1096px) {
+  .servicepage__servicesdisplay {
+    .servicesdisplay__servicelist {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      gap: 25px;
+    }
+  }
+}
+@media (min-width: 575px) and (max-width: 767px) {
+  .servicepage__servicesdisplay {
+    .servicesdisplay__servicelist {
+      width: 450px;
+      margin: auto;
+      .servicesdescription {
+        width: 100%;
+        margin: 10px;
+        &:nth-child(2) {
+          transform: translateY(0);
+        }
+        &:nth-child(4) {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .servicepage__servicesdisplay {
+    .servicesdisplay__servicelist {
+      display: block;
+      .servicesdescription {
+        width: 100%;
+        margin: 10px;
+        &:nth-child(2) {
+          transform: translateY(0);
+        }
+        &:nth-child(4) {
+          transform: translateY(0);
         }
       }
     }

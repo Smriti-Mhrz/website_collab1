@@ -1,8 +1,9 @@
+@import "../abstracts/variables";
 .team__wrapper {
   background-color: #fffaf6;
   margin: auto;
   padding: 20px;
-  max-width: 1170px;
+  max-width: $container_width;
   height: max-content;
   .team__info {
     text-align: center;
@@ -40,6 +41,7 @@
         width: 100px;
         border-radius: 50%;
         margin: 20px 0 20px 0;
+        vertical-align: middle;
       }
       h4 {
         font-size: 20px;
