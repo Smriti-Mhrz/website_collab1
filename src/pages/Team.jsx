@@ -108,41 +108,7 @@ export const Team = () => {
           <h4>Smriti Maharjan</h4>
           <span>Founder,Leader</span>
         </div>
-        {/* <ol className="msg__carousel">
-          <li className="msg_1">
-            <div className="message mb__message tb__message">
-              <p>
-                "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tenetur quod deleniti, similique dolorum cumque necessitatibus
-                hic veritatis asperiores magnam."
-              </p>
-              <h4>Smriti Maharjan</h4>
-              <span>Founder,Leader</span>
-            </div>
-          </li>
-          <li className="msg_1">
-            <div className="message mb__message tb__message">
-              <p>
-                "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tenetur quod deleniti, similique dolorum cumque necessitatibus
-                hic veritatis asperiores magnam."
-              </p>
-              <h4>Smriti Maharjan</h4>
-              <span>Founder,Leader</span>
-            </div>
-          </li>
-          <li className="msg_1">
-            <div className="message mb__message tb__message">
-              <p>
-                "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tenetur quod deleniti, similique dolorum cumque necessitatibus
-                hic veritatis asperiores magnam."
-              </p>
-              <h4>Smriti Maharjan</h4>
-              <span>Founder,Leader</span>
-            </div>
-          </li>
-        </ol> */}
+        
         <div className="video">
           <BsFillPlayFill />
         </div>

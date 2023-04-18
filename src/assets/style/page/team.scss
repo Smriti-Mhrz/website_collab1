@@ -76,6 +76,24 @@
     background-size: cover;
     height: 450px;
     margin-bottom: 150px;
+    .video {
+      background-color: white;
+      border: 1px solid white;
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      font-size: 80px;
+      position: relative;
+      left: 1100px;
+      top: -290px;
+      border-radius: 50%;
+      color: #fe7865;
+      &:hover {
+        transition: 0.5s ease-in-out;
+        color: white;
+        background-color: #fe7865;
+      }
+    }
     .msg__carousel {
       list-style: none;
       display: flex;
@@ -111,36 +129,29 @@
       }
     }
     @media screen and (max-width: 625px) {
+      .team__message {
+        .video {
+          display: none;
+        }
+      }
       .tb__message {
         left: 20px;
         font-size: 30px;
         width: 300px;
       }
     }
-    @media screen and (max-width: 450px) {
+    @media (max-width: 450px) {
+      .team__message {
+        .video {
+          display: none;
+        }
+      }
       .mb__message {
         left: 20px;
         font-size: 20px;
         width: 200px;
       }
     }
-    .video {
-      background-color: white;
-      border: 1px solid white;
-      width: 100px;
-      height: 100px;
-      padding: 10px;
-      font-size: 80px;
-      position: relative;
-      left: 1100px;
-      top: -290px;
-      border-radius: 50%;
-      color: #fe7865;
-      &:hover {
-        transition: 0.5s ease-in-out;
-        color: white;
-        background-color: #fe7865;
-      }
-    }
+    
   }
 }

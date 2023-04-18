@@ -18,7 +18,7 @@ body {
   width: fit-content;
   background: $font_color3;
   height: auto;
-  // background-image: url(https://picsum.photos/1280/720);
+  background-image: linear-gradient(90deg,transparent),url(https://picsum.photos/1280/720);
   // background-repeat: no-repeat;
   // background-size: cover;
 }
