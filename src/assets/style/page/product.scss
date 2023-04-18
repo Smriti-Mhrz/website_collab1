@@ -7,17 +7,15 @@
   display: flex;
   flex-wrap: wrap;
   max-width: $container_width;
-  gap: 35px;
+  gap: 22px;
   .productpage__collection {
-    width: 280px;
-    border: 1px solid gainsboro;
-    // margin-right: 40px;
+    width: 280px;    
     margin-bottom: 25px;
     h4 {
       background-color: $background-color1;
-      padding: 1em;
+      padding: 16px;
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 24px;
       font-weight: bold;
     }
     .productpage__collectionlist {
@@ -92,7 +90,6 @@
         font-size: 1.1rem;
       }
       ul {
-        list-style: none;
         display: flex;
         align-items: center;
         justify-content: center;
