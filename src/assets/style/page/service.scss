@@ -9,6 +9,7 @@ $primary-color: #fe7865;
   grid-column: 2 span;
   margin-bottom: 4em;
   display: grid;
+  row-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   h5 {
     grid-column: 2 span;

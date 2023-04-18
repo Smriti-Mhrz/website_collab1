@@ -1,21 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+@import "./assets/style/index.scss";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 html {
-  display: block;
   line-height: 1.15;
+  display: block;
 }
 body {
-  background: #fff;
-  // overflow: hidden;
+  margin: auto;
+  height: max-content;
+  width: fit-content;
+  background: $font_color3;
   height: auto;
+  // background-image: url(https://picsum.photos/1280/720);
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
 li,
 a {
   text-decoration: none;
   list-style-type: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border: 1px solid #fe7865;
+  background-color: $primary_color;
+  text-align: center;
+  transition: all 0.4s ease-out 0s;
+  color: #fff;
+  &:hover {
+    background-color: #fff;
+    transition: 0.3s ease-in;
+    color: #fe7865;
+  }
 }

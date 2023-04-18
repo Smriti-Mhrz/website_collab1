@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../assets/style/contact/contact.scss";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiHome } from "react-icons/fi";
