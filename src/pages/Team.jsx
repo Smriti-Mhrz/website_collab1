@@ -108,10 +108,10 @@ export const Team = () => {
           <h4>Smriti Maharjan</h4>
           <span>Founder,Leader</span>
         </div>
-        
-        <div className="video">
+
+        {/* <div className="video">
           <BsFillPlayFill />
-        </div>
+        </div> */}
       </div>
     </div>
   );

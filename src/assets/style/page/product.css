@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Roboto&display=swap%27");
+.productpage__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  gap: 35px;
+}
+.productpage__wrapper .productpage__collection {
+  width: 280px;
+  border: 1px solid gainsboro;
+  margin-bottom: 25px;
+}
+.productpage__wrapper .productpage__collection h4 {
+  background-color: #eeeeee;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.productpage__wrapper .productpage__collection .productpage__collectionlist {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 58px;
+}
+.productpage__wrapper .productpage__collection .productpage__collectionlist a {
+  text-decoration: none;
+  border: 1px solid gainsboro;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #777777;
+  width: 100%;
+  height: 60px;
+}
+.productpage__wrapper .productpage__collection .productpage__collectionlist a:focus {
+  color: white;
+  background-color: #fe7865;
+  border-color: #fe7865;
+}
+.productpage__wrapper .productpage__images {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.productpage__wrapper .productpage__images .productpage__singleImage .product__image {
+  width: 260px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.productpage__wrapper .productpage__images .productpage__singleImage .product__image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+.productpage__wrapper .productpage__images .productpage__singleImage .product__image img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.productpage__wrapper .productpage__images .productpage__singleImage .product__image .discount__badge {
+  position: absolute;
+  background-color: #fe7865;
+  top: 10px;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  left: 200px;
+  right: 10px;
+}
+.productpage__wrapper .productpage__images .productpage__singleImage .product__image .discount__badge p {
+  color: white;
+  font-size: 15px;
+  margin-left: 0;
+  margin-top: 13px;
+  font-weight: bold;
+}
+.productpage__wrapper .productpage__images .productpage__singleImage h5 {
+  font-size: 1.1rem;
+}
+.productpage__wrapper .productpage__images .productpage__singleImage ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fe7865;
+}
+.productpage__wrapper .productpage__images .productpage__singleImage span {
+  color: #fe7865;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) and (max-width: 1135px) {
+  .productpage__wrapper {
+    justify-content: center;
+  }
+  .productpage__images .productpage__singleImage:last-child {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .productpage__wrapper {
+    display: block;
+    margin-top: 20px;
+    padding: 0;
+    margin: 0;
+    margin-top: 70px;
+  }
+  .productpage__wrapper .productpage__collection {
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .productpage__wrapper .productpage__images {
+    width: 100%;
+    padding: 0;
+  }
+  .productpage__wrapper .productpage__images .productpage__singleImage {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .productpage__wrapper .productpage__images .productpage__singleImage .product__image {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .productpage__wrapper .productpage__images .productpage__singleImage .product__image img {
+    width: 100%;
+  }
+  .productpage__wrapper .productpage__images .productpage__singleImage .product__image .discount__badge {
+    position: absolute;
+    background-color: #fe7865;
+    top: 10px;
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    left: 200px;
+  }
+  .productpage__wrapper .productpage__images .productpage__singleImage .product__image .discount__badge p {
+    color: white;
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+}/*# sourceMappingURL=product.css.map */

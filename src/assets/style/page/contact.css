@@ -1,0 +1,184 @@
+.contact {
+  max-width: 1170px;
+}
+.contact .contact__slogan {
+  text-align: center;
+}
+.contact .contact__form .form__details {
+  width: 100%;
+  justify-content: space-between;
+}
+.contact .contact__form .form__details input {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #bdbaba;
+  outline: none;
+}
+.contact .contact__form .form__message textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #eeeeee;
+  border: 1px solid #bdbaba;
+  outline: none;
+  margin-bottom: 20px;
+}
+.contact .contact__form button {
+  background-color: #fe7865;
+  outline: none;
+  border-color: #fe7865;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: 1px solid #fe7865;
+  margin-bottom: 25px;
+  transition: 0.3s ease-in;
+}
+.contact .contact__form button:hover {
+  border: 1px solid;
+  border-color: #fe7865;
+  color: #fe7865;
+  background-color: white;
+  transition: 0.3s ease-in;
+}
+
+@media (max-width: 960px) {
+  .contact {
+    padding-top: 70px;
+  }
+  .contact .contact__slogan h3 {
+    font-size: 65px;
+    font-weight: 600;
+    color: #333;
+  }
+  .contact .contact__box {
+    margin-top: 70px;
+  }
+  .contact .contact__box .contact__info {
+    padding: 0 20px 20px;
+  }
+  .contact .contact__box .contact__info h4 {
+    font-size: 26px;
+    font-weight: 600;
+    padding: 0 0 5px;
+  }
+  .contact .contact__box .contact__info p {
+    font-size: 16px;
+    color: #3a3a3a;
+    font-weight: 400;
+  }
+  .contact .contact__box .contact__info p span {
+    font-size: 20px;
+    color: #fe7865;
+    margin-right: 10px;
+  }
+  .contact .contact__box .contact__form {
+    padding: 0 20px 20px;
+  }
+  .contact .contact__box .contact__form .form__details input {
+    padding: 8px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .contact .contact__slogan h3 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 960px) {
+  .contact {
+    margin: 0 auto;
+  }
+  .contact .contact__slogan {
+    text-align: center;
+    text-justify: center;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  .contact .contact__slogan h3 {
+    font-size: 60px;
+    color: #333;
+  }
+  .contact .contact__box {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    box-shadow: 0 0 3px #3a3a3a;
+  }
+  .contact .contact__box .contact__info {
+    padding: 20px;
+    line-height: 50px;
+    align-self: start;
+  }
+  .contact .contact__box .contact__info h4 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .contact .contact__box .contact__info span {
+    color: #fe7865;
+    font-size: 20px;
+    margin-right: 22px;
+  }
+  .contact .contact__box .contact__info p {
+    color: #3a3a3a;
+    font-size: 20px;
+  }
+  .contact .contact__box .contact__form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-self: center;
+  }
+  .contact .contact__box .contact__form form .form__details {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contact .contact__box .contact__form form .form__details input {
+    width: 45%;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #eeeeee;
+    border: 1px solid #bdb6b6;
+    outline: none;
+    margin: 0 25px 25px 0;
+  }
+  .contact .contact__box .contact__form form .form__details input:nth-child(2) {
+    margin: 0 0 25px 0;
+  }
+  .contact .contact__box .contact__form form .form__message {
+    grid-column: span 2;
+  }
+  .contact .contact__box .contact__form form .form__message textarea {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #eeeeee;
+    border: 1px solid #bdbaba;
+    outline: none;
+    margin-bottom: 25px;
+  }
+  .contact .contact__box .contact__form form button {
+    background-color: #fe7865;
+    outline: none;
+    border-color: #fe7865;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.8em 2em 0.8em 2em;
+    border: 1px solid #fe7865;
+    margin-bottom: 8px;
+  }
+  .contact .contact__box .contact__form form button:hover {
+    border: 1px solid;
+    border-color: #fe7865;
+    color: #fe7865;
+    background-color: white;
+    transition: 0.3s ease-in;
+  }
+}/*# sourceMappingURL=contact.css.map */

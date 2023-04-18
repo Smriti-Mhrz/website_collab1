@@ -4,9 +4,9 @@
   margin: 0 auto 40px auto;
   position: sticky;
   top: 0;
-  background-color: $background-color;
+  // background-color: $background-color;
   z-index: 9999;
-  
+  // box-shadow: 0 0 2px white;
 }
 .navbar__main {
   display: flex;
@@ -45,7 +45,7 @@
     .nav__menubar {
       position: absolute;
       top: 70%;
-      background:$background-color;
+      background: $background-color;
       left: 13%;
       width: 75%;
       li {
@@ -64,24 +64,21 @@
     .hamburger {
       display: block;
       cursor: pointer;
-      margin-right:70px;
+      margin-right: 70px;
     }
     .nav_list {
       flex-direction: column;
     }
-    .logo{
+    .logo {
       margin-left: 120px;
     }
   }
   @media screen and (max-width: 767px) {
-    .logo{
+    .logo {
       margin-left: 70px;
     }
-    .hamburger{
+    .hamburger {
       margin-right: 45px;
-
     }
-    
   }
-  
 }
