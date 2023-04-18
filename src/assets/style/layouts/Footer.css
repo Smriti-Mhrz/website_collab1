@@ -1,13 +1,13 @@
 .footer__section {
   max-width: 1170px;
-  margin-top: 20px;
+  margin-top: 40px;
+  background-color: #eeeeee;
   position: relative;
   width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 22px;
-  padding-top: 40px;
 }
 .footer__section .section__part {
   margin: 15px;
