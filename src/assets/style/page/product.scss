@@ -1,11 +1,8 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Roboto&display=swap%27");
 @import "../abstracts/variables";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins";
-}
+
+
 .productpage__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +14,7 @@
     // margin-right: 40px;
     margin-bottom: 25px;
     h4 {
-      background-color: #e5e5e5;
+      background-color: $background-color1;
       padding: 1em;
       text-align: center;
       font-size: 1.5rem;
@@ -40,9 +37,9 @@
         width: 100%;
         height: 60px;
         &:focus {
-          color: white;
-          background-color: #fe7865;
-          border-color: #fe7865;
+          color: $background-color;
+          background-color:$primary_color;
+          border-color: $primary_color;
         }
       }
     }
@@ -73,7 +70,7 @@
         }
         .discount__badge {
           position: absolute;
-          background-color: #fe7865;
+          background-color: $primary_color;
           top: 10px;
           border-radius: 100%;
           height: 50px;
@@ -82,7 +79,7 @@
           left: 200px;
           right: 10px;
           p {
-            color: white;
+            color: $background-color;
             font-size: 15px;
             margin-left: 0;
             margin-top: 13px;
@@ -99,7 +96,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #fc924b;
+        color:$primary_color;
       }
       span {
         color: $primary_color;
@@ -157,7 +154,7 @@
             text-align: center;
             left: 200px;
             p {
-              color: white;
+              color: $background-color;
               font-size: 20px;
               margin-left: 0;
               margin-top: 15px;

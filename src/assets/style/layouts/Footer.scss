@@ -3,13 +3,14 @@
 .footer__section {
   max-width: $container_width;
   margin: 0 auto;
-  background-color: $background-color;
+  background-color: $background-color1;
   position: relative;
   width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 22px;
+  padding-top: 40px;
   .section__part {
     margin: 15px;
     padding-top: 20px;
@@ -18,6 +19,7 @@
     li {
       h3 {
         color: $font_color2;
+        font-weight: 600;
       }
       font-weight: 400;
       color: $font_color1;

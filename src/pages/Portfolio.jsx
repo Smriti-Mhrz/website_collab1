@@ -32,7 +32,9 @@ export function Portfolio() {
           <div className="portfolio_banner">
             <img src={img} alt="banner_one" />
           </div>
-          <button className="portfolio__prev">Full Preview</button>
+          <div className="portfolio_preview">
+          <button>Full Preview</button>
+          </div>
         </div>
       </div>
     </>

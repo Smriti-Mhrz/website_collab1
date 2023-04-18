@@ -1,9 +1,27 @@
-import React from "react";
+import React, {useState,useEffect}from "react";
 // import '../assets/style/Footer.scss'
 import logo from "../assets/images/logo.webp";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
-export function Footer() {
+
+export const Footer = ()=>{
+      const [contactInfo, setContactInfo] = useState({});
+    const contactInfoFetching = async () => {
+      try {
+        const response = await fetch(
+          "https://jsonplaceholder.typicode.com/users/1"
+        );
+        const data = await response.json();
+        setContactInfo(data);
+      } catch (e) {
+        console.log(e);
+      }
+    };
+    useEffect(() => {
+      contactInfoFetching();
+    }, []);
+   
   return (
     <>
       <div className="footer__section">
@@ -57,25 +75,23 @@ export function Footer() {
             <li>Privacy Policy</li>
           </ul>
         </div>
-
         <div className="section__part tablet__part mb__part">
           <ul>
             <li>
               <h3>Contact Info</h3>
             </li>
             <li>
-              <span>Phone:</span> +88123 4567 890
+              <span>Phone:</span> 
+            {contactInfo?.phone}
               <br />
             </li>
             <li>
-              <span>Email:</span> contact@yourmail.com
-              <br />
-              support@yourmail.com
+              <span>Email:</span> {contactInfo?.email}              
             </li>
             <li>
-              <span>Address:</span> 5078 Jensen Key, Port
-              <br />
-              Kaya, WV 73505
+              <span>Address:</span> {contactInfo?.address?.street},
+            <span>{contactInfo?.address?.city}</span>
+              
             </li>
           </ul>
         </div>

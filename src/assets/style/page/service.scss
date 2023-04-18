@@ -1,5 +1,5 @@
+
 @import "../abstracts/variables";
-$primary-color: #fe7865;
 .servicespage__wrapper {
   background-color: #fffaf6;
   display: grid;
@@ -39,7 +39,7 @@ $primary-color: #fe7865;
   }
   p {
     grid-column: 2 span;
-    color: #777777;
+    color: $font_color1;
   }
 }
 .servicepage__servicesdisplay {
@@ -57,7 +57,7 @@ $primary-color: #fe7865;
       background-color: $primary-color;
       outline: none;
       border-color: $primary-color;
-      color: white;
+      color: $background_color;
       font-size: 1rem;
       font-weight: 500;
       padding: 0.8em 2em 0.8em 2em;
@@ -65,9 +65,9 @@ $primary-color: #fe7865;
       margin-bottom: 25px;
       &:hover {
         border: 1px solid;
-        border-color: #fe7865;
+        border-color: $primary_color;
         color: $primary-color;
-        background-color: white;
+        background-color: $background_color;
         transition: 0.3s ease-in;
       }
     }
@@ -83,8 +83,8 @@ $primary-color: #fe7865;
       height: 250px;
       text-align: center;
       border: 1px solid gainsboro;
-      background-color: white;
-      color: #777777;
+      background-color: $background_color;
+      color: $font_color1;
       padding: 1em;
       i {
         color: $primary-color;
