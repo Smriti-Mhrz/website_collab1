@@ -13,7 +13,7 @@ export function Blog() {
         <div className="blog__head">
           <h3>From The Blog</h3>
           <p>
-            There are many variations of passages of Lorem Ipsum available, but
+            There are many variations of passages of Lorem Ipsum available, but<br/>
             the majority have suffered alteration in some form.
           </p>
         </div>
