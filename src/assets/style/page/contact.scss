@@ -42,7 +42,7 @@
         border: 1px solid;
         border-color: $primary_color;
         color: $primary_color;
-        background-color:$background-color;
+        background-color: $background-color;
         transition: 0.3s ease-in;
       }
     }
@@ -53,9 +53,10 @@
   .contact {
     padding-top: 70px;
     .contact__slogan {
-      h2 {
+      h3 {
         font-size: 65px;
         font-weight: 600;
+        color: $font_color2;
       }
     }
     .contact__box {
@@ -67,10 +68,10 @@
           font-weight: 600;
           padding: 0 0 5px;
         }
-        h5 {
+        p {
           font-size: 16px;
           color: $font_color1;
-          font-weight: bold;
+          font-weight: 400;
           span {
             font-size: 20px;
             color: $primary_color;
@@ -95,7 +96,7 @@
 @media (max-width: 500px) {
   .contact {
     .contact__slogan {
-      h2 {
+      h3 {
         font-size: 35px;
         font-weight: 600;
       }
@@ -111,9 +112,9 @@
       text-justify: center;
       padding: 10px;
       margin-bottom: 50px;
-      h2 {
+      h3 {
         font-size: 60px;
-        color:$font_color1;
+        color: $font_color2;
       }
     }
     .contact__box {
@@ -127,14 +128,14 @@
         align-self: start;
         h4 {
           font-size: 30px;
-          font-weight: bold;
+          font-weight: 600;
         }
         span {
-          color:$primary_color;
+          color: $primary_color;
           font-size: 20px;
           margin-right: 22px;
         }
-        h5 {
+        p {
           color: $font_color1;
           font-size: 20px;
         }
