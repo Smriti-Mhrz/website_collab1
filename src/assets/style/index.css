@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Roboto&display=swap%27");
 .footer__section {
   max-width: 1170px;
@@ -1027,56 +1026,4 @@
     background-color: white;
     transition: 0.3s ease-in;
   }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-html {
-  line-height: 1.15;
-  display: block;
-}
-
-body {
-  margin: auto;
-  height: -moz-max-content;
-  height: max-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background: #fff;
-  height: auto;
-  background: linear-gradient(to left, transparent, rgba(0, 204, 255, 0.8)), url("./assets/images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-li,
-a {
-  text-decoration: none;
-  list-style-type: none;
-}
-
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-button {
-  cursor: pointer;
-  font-size: 20px;
-  margin: 1.5rem auto;
-  padding: 1rem;
-  border: 1px solid #fe7865;
-  background-color: #fe7865;
-  text-align: center;
-  transition: all 0.4s ease-out 0s;
-  color: #fff;
-}
-button:hover {
-  background-color: #fff;
-  transition: 0.3s ease-in;
-  color: #fe7865;
-}/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=index.css.map */

@@ -1,11 +1,12 @@
 
 // @import "../abstracts/variables";
+@import "../abstracts/variables";
 .servicespage__wrapper {
-  background-color: #fffaf6;
+  // background-color: #fffaf6;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  // margin: 48px;
   max-width: $container_width;
+  padding: 10px;
 }
 .servicepage__ourstory {
   grid-column: 2 span;
